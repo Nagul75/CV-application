@@ -1,4 +1,4 @@
-import  "./Section.css"
+import  "./styles/Section.css"
 
 export default function Section({text}) {
     return (
