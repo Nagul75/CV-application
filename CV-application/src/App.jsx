@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import Section from "./components/Section"
+import Profile from "./components/Profile"
 
 import { useState } from "react"
 import "./App.css"
@@ -37,6 +38,7 @@ function App() {
         <Header/>
         <div className="section-container">
           <Section text = "Profile">
+            <Profile/>
           </Section>
           <Section text="Education">
           </Section>
