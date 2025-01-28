@@ -1,4 +1,4 @@
-.profile-container {
+.work-container {
     display: flex;
     justify-content: center;
     width: 800px;
@@ -7,7 +7,7 @@
     font-weight: 400;
 }
 
-.profile {
+.work {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

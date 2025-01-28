@@ -1,4 +1,4 @@
-.profile-container {
+.education-container {
     display: flex;
     justify-content: center;
     width: 800px;
@@ -7,7 +7,7 @@
     font-weight: 400;
 }
 
-.profile {
+.education {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

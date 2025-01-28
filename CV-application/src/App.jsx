@@ -1,6 +1,10 @@
 import Header from "./components/Header"
 import Section from "./components/Section"
 import Profile from "./components/Profile"
+import Education from "./components/Education"
+import Work from "./components/Work"
+import Project from "./components/Project"
+import Technical from "./components/Technical"
 
 import { useState } from "react"
 import "./App.css"
@@ -38,15 +42,19 @@ function App() {
         <Header/>
         <div className="section-container">
           <Section text = "Profile">
-            <Profile/>
+            <Profile profileData = {{name, email, phone, github, linkedin}} handleChange = {{setName, setEmail, setPhone, setGitHub, setLinkedin}}/>
           </Section>
           <Section text="Education">
+            <Education educationData = {{institute, location, date_start, date_end}} handleChange = {{setInstitute, setLocation, setDate_start, setDate_end}}/>
           </Section>
           <Section text = "Work">
+            <Work workData = {{company, position, dateWorked, workDetails}} handleChange = {{setCompany, setPosition, setDateWorked, setWorkDetails}}/>
           </Section>
           <Section text = "Projects">
+            <Project projectData = {{projectTitle, projectTech, projectDetails}} handleChange = {{setProjectTitle, setProjectTech, setProjectDetails}}/>
           </Section>
           <Section text="Technical Skills">
+            <Technical skillData = {{languages, devTools, libraries}} handleChange = {{setLanguages, setDevTools, setLibraries}}/>
           </Section>
         </div>
       </div>
