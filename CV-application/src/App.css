@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: "Rubik", serif;
+    background-color: rgb(53, 53, 53);
 }
 
 .page-container {

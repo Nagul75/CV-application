@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-div {
+section {
     border-radius: 5px;
     border: 1px solid gray;
 }
