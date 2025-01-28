@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    width: 1000px;
+    height: auto;
+}
