@@ -8,6 +8,7 @@
 .page-container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .page {
@@ -20,4 +21,20 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.submit-btn button {
+    font-size: x-large;
+    color: white;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid gray;
 }

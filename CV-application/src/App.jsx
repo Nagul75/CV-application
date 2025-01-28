@@ -11,6 +11,13 @@ import "./App.css"
 import person from "./components/data"
 
 function App() {
+  const [submitted, setSubmit] = useState(false)
+  function handleSubmit(e) {
+    e.preventDefault()
+    console.log(name, email, phone, github, linkedin)
+    setSubmit(true)
+  }
+
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
@@ -39,24 +46,34 @@ function App() {
   return(
     <div className="page-container">
       <div className="page">
-        <Header/>
-        <div className="section-container">
-          <Section text = "Profile">
-            <Profile profileData = {{name, email, phone, github, linkedin}} handleChange = {{setName, setEmail, setPhone, setGitHub, setLinkedin}}/>
-          </Section>
-          <Section text="Education">
-            <Education educationData = {{institute, location, date_start, date_end}} handleChange = {{setInstitute, setLocation, setDate_start, setDate_end}}/>
-          </Section>
-          <Section text = "Work">
-            <Work workData = {{company, position, dateWorked, workDetails}} handleChange = {{setCompany, setPosition, setDateWorked, setWorkDetails}}/>
-          </Section>
-          <Section text = "Projects">
-            <Project projectData = {{projectTitle, projectTech, projectDetails}} handleChange = {{setProjectTitle, setProjectTech, setProjectDetails}}/>
-          </Section>
-          <Section text="Technical Skills">
-            <Technical skillData = {{languages, devTools, libraries}} handleChange = {{setLanguages, setDevTools, setLibraries}}/>
-          </Section>
-        </div>
+        {!submitted ?
+          <>
+          <Header text = "CV APPLICATION GENERATOR"/>
+            <div className="section-container">
+              <Section text = "Profile">
+                <Profile profileData = {{name, email, phone, github, linkedin}} handleChange = {{setName, setEmail, setPhone, setGitHub, setLinkedin}}/>
+              </Section>
+              <Section text="Education">
+                <Education educationData = {{institute, location, date_start, date_end}} handleChange = {{setInstitute, setLocation, setDate_start, setDate_end}}/>
+              </Section>
+              <Section text = "Work">
+                <Work workData = {{company, position, dateWorked, workDetails}} handleChange = {{setCompany, setPosition, setDateWorked, setWorkDetails}}/>
+              </Section>
+              <Section text = "Projects">
+                <Project projectData = {{projectTitle, projectTech, projectDetails}} handleChange = {{setProjectTitle, setProjectTech, setProjectDetails}}/>
+              </Section>
+              <Section text="Technical Skills">
+                <Technical skillData = {{languages, devTools, libraries}} handleChange = {{setLanguages, setDevTools, setLibraries}}/>
+              </Section>
+            </div>
+          </> :
+          <>
+            <h1>FORM SUBMITTED</h1>
+          </>
+        }
+        <div className="submit-btn">
+          <button onClick={handleSubmit}>SUBMIT</button>
+      </div>
       </div>
     </div>
   )

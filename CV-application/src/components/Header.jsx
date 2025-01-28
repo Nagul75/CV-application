@@ -1,9 +1,9 @@
 import "./styles/Header.css"
 
-export default function Header() {
+export default function Header({text}) {
     return (
         <header>
-            <h1>CV APPLICATION GENERATOR</h1>
+            <h1>{text}</h1>
         </header>
     )
 }
