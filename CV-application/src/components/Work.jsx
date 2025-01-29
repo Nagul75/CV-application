@@ -6,16 +6,16 @@ export default function (educationData, handleChange) {
     return (
         <div className="work-container">
             <div className="work">
-                <div className="">
+                <div className="work-input">
                   Company:<input type="text" onChange={(e) => setCompany(e.target.value)} value={company}></input>
                 </div>
-                <div className="position">
+                <div className="work-input">
                   Position:<input type="text" onChange={(e) => setPosition(e.target.value)} value={position}></input>
                 </div>
-                <div className="date">
+                <div className="work-input">
                   Date:<input type="text" onChange={(e) => setWorkDate(e.target.value)} value={dateWorked}></input>
                 </div>
-                <div className="details">
+                <div className="work-input">
                   Details: <textarea onChange={(e) => setWorkDetails(e.target.value)} value={workDetails}></textarea>
                 </div>
             </div>

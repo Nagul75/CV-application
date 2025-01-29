@@ -6,13 +6,13 @@ export default function (skillData, handleChange) {
     return (
         <div className="technical-container">
             <div className="technical">
-                <div className="languages">
+                <div className="technical-input">
                   Languages:<input type="text" onChange={(e) => setLanguages(e.target.value)} value={languages}></input>
                 </div>
-                <div className="devTools">
+                <div className="technical-input">
                   Tools:<input type="text" onChange={(e) => setDevTools(e.target.value)} value={devTools}></input>
                 </div>
-                <div className="libraries">
+                <div className="technical-input">
                   Libraries:<input type="text" onChange={(e) => setLibraries(e.target.value)} value={libraries}></input>
                 </div>
             </div>
