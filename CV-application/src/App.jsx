@@ -19,8 +19,9 @@ function App() {
     person.profile = {name, email, phone, github, linkedin}
     person.education = {institute, location, date_start, date_end}
     person.project = {projectTitle, projectTech, projectDetails}
-    person.technical_skills = {languages, devTools, libraries}
+    person.technical = {languages, devTools, libraries}
     person.work = {company, position, dateWorked, workDetails}
+    console.log(person.technical)
   }
 
   const [name, setName] = useState("")
@@ -80,7 +81,7 @@ function App() {
                     education = {person.education}
                     project = {person.project}
                     work = {person.work}
-                    techincal = {person.technical_skills}/>
+                    technical = {person.technical}/>
           </>
         }
       </div>

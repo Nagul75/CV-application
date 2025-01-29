@@ -1,6 +1,6 @@
 import "./styles/Technical.css"
 
-export default function (skillData, handleChange) {
+export default function ({skillData, handleChange}) {
     const {languages, devTools, libraries} = skillData
     const {setLanguages, setDevTools, setLibraries} = handleChange
     return (

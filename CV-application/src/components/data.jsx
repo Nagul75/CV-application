@@ -17,7 +17,7 @@ let person = {
         projectTech: "",
         projectDetails: ""
     },
-    technical_skills: {
+    technical: {
         languages: "",
         devtools: "",
         libraries: ""

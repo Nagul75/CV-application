@@ -52,6 +52,16 @@ export default function Resume({profile, education, project, work, technical}) {
                             <p>{project.projectDetails}</p>
                         </div>
                     </div>
+                    <div className="sectionR-container">
+                        <div className ="section-title">
+                            <h2>Technical Skills</h2>
+                        </div>
+                        <div className="skills">
+                            <p><b>Languages</b>: {technical.languages}</p>
+                            <p><b>Developer Tools</b>: {technical.devTools}</p>
+                            <p><b>libraries</b>: {technical.libraries}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
