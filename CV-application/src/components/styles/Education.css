@@ -20,3 +20,9 @@ input {
     color: white;
     margin-left: 20px;
 }
+
+.education-input {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+}

@@ -5,17 +5,22 @@ import Education from "./components/Education"
 import Work from "./components/Work"
 import Project from "./components/Project"
 import Technical from "./components/Technical"
+import Resume from "./components/Resume"
+import person from "./components/data"
 
 import { useState } from "react"
 import "./App.css"
-import person from "./components/data"
 
 function App() {
   const [submitted, setSubmit] = useState(false)
   function handleSubmit(e) {
     e.preventDefault()
-    console.log(name, email, phone, github, linkedin)
     setSubmit(true)
+    person.profile = {name, email, phone, github, linkedin}
+    person.education = {institute, location, date_start, date_end}
+    person.project = {projectTitle, projectTech, projectDetails}
+    person.technical_skills = {languages, devtools, libraries}
+    person.work = {company, position, dateWorked, workDetails}
   }
 
   const [name, setName] = useState("")
@@ -66,14 +71,18 @@ function App() {
                 <Technical skillData = {{languages, devTools, libraries}} handleChange = {{setLanguages, setDevTools, setLibraries}}/>
               </Section>
             </div>
+            <div className="submit-btn">
+              <button onClick={handleSubmit}>SUBMIT</button>
+            </div>
           </> :
           <>
-            <h1>FORM SUBMITTED</h1>
+            <Resume profile = {person.profile}
+                    education = {person.education}
+                    project = {person.project}
+                    work = {person.work}
+                    techincal = {person.technical_skills}/>
           </>
         }
-        <div className="submit-btn">
-          <button onClick={handleSubmit}>SUBMIT</button>
-      </div>
       </div>
     </div>
   )

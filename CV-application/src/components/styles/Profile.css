@@ -18,5 +18,10 @@
 input {
     border-radius: 5px;
     color: white;
-    margin-left: 20px;
+}
+
+.profile-input {
+    display: flex;
+    justify-content: space-between;
+    width: 18rem;
 }

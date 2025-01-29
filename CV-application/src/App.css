@@ -26,7 +26,7 @@
 .submit-btn {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 50px;
 }
 
@@ -36,5 +36,6 @@
     padding: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    border: 1px solid gray;
+    border: 2px solid gray;
+    border-radius: 5px;
 }

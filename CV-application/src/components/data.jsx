@@ -7,15 +7,15 @@ let person = {
         linkedin: ""
     },
     education: {
-        institute_name: "",
+        institute: "",
         location: "",
         date_start: "",
         date_end: "",
     },
     project: {
-        title: "",
-        tech: "",
-        details: ""
+        projectTitle: "",
+        projectTech: "",
+        projectDetails: ""
     },
     technical_skills: {
         languages: "",
@@ -25,8 +25,8 @@ let person = {
     work: {
         company: "",
         position: "",
-        date: "",
-        details: ""
+        dateWorked: "",
+        Workdetails: ""
     }
 }
 

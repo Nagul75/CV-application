@@ -6,19 +6,19 @@ export default function Profile({profileData, handleChange}) {
     return (
         <div className="profile-container">
             <div className="profile">
-                <div className="name">
+                <div className="profile-input">
                   Name:<input type="text" onChange={(e) => setName(e.target.value)} value={name}></input>
                 </div>
-                <div className="email">
+                <div className="profile-input">
                     Email:<input type="text" onChange={(e) => setEmail(e.target.value)} value={email}></input>
                 </div>
-                <div className="phone">
+                <div className="profile-input">
                     Phone:<input type="text" onChange={(e) => setPhone(e.target.value)} value={phone}></input>
                 </div>
-                <div className="github">
+                <div className="profile-input">
                     Github:<input type="text" onChange={(e) => setGitHub(e.target.value)} value={github}></input>
                 </div>
-                <div className="linkedin">
+                <div className="profile-input">
                     Linkedin:<input type="text" onChange={(e) => setLinkedin(e.target.value)} value={linkedin}></input>
                 </div>
             </div>
