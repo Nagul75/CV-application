@@ -2,7 +2,7 @@ import "./styles/Education.css"
 
 export default function Education(educationData, handleChange) {
     const {institute, location, date_start, date_end} = educationData
-    const {setInstitute, setLocation, setDateStart, setDateEnd} = handleChange
+    const {setInstitute, setLocation, setDate_start, setDate_end} = handleChange
     return (
         <div className="education-container">
             <div className="education">
@@ -13,10 +13,10 @@ export default function Education(educationData, handleChange) {
                   Location:<input type="text" onChange={(e) => setLocation(e.target.value)} value={location}></input>
                 </div>
                 <div className="education-input">
-                  Year-Start:<input type="text" onChange={(e) => setDateStart(e.target.value)} value={date_start}></input>
+                  Year-Start:<input type="text" onChange={(e) => setDate_start(e.target.value)} value={date_start}></input>
                 </div>
                 <div className="education-input">
-                  Year-End:<input type="text" onChange={(e) => setDateEnd(e.target.value)} value={date_end}></input>
+                  Year-End:<input type="text" onChange={(e) => setDate_end(e.target.value)} value={date_end}></input>
                 </div>
             </div>
         </div>

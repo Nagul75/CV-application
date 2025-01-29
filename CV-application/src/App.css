@@ -39,3 +39,17 @@
     border: 2px solid gray;
     border-radius: 5px;
 }
+
+input {
+    background-color: rgb(205, 202, 202);
+    color: black;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+textarea {
+    background-color: rgb(205, 202, 202);
+    color: black;
+    border-radius: 5px;
+    border: 2px solid gray;
+}

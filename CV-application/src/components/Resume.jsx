@@ -12,7 +12,13 @@ export default function Resume({profile, education, project, work, technical}) {
                         <p>{profile.email}  |  {profile.phone}  |   {profile.github}  |  {profile.linkedin}</p>
                     </div>
                     <div className="education">
-                        <h2>Education</h2>
+                        <div className="education-title">
+                            <h2>Education</h2>
+                        </div>
+                        <div className="education-content">
+                            <div>{education.institute}</div>
+                            <div>{education.date_start} - {education.date_end}</div>
+                        </div>
                     </div>
                 </div>
             </div>
