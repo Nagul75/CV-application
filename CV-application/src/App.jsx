@@ -19,7 +19,7 @@ function App() {
     person.profile = {name, email, phone, github, linkedin}
     person.education = {institute, location, date_start, date_end}
     person.project = {projectTitle, projectTech, projectDetails}
-    person.technical_skills = {languages, devtools, libraries}
+    person.technical_skills = {languages, devTools, libraries}
     person.work = {company, position, dateWorked, workDetails}
   }
 

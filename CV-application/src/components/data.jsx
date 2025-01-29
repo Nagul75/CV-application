@@ -26,7 +26,7 @@ let person = {
         company: "",
         position: "",
         dateWorked: "",
-        Workdetails: ""
+        workDetails: ""
     }
 }
 

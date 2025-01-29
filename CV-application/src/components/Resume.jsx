@@ -11,13 +11,45 @@ export default function Resume({profile, education, project, work, technical}) {
                     <div className="profile">
                         <p>{profile.email}  |  {profile.phone}  |   {profile.github}  |  {profile.linkedin}</p>
                     </div>
-                    <div className="education">
-                        <div className="education-title">
+                    <div className="sectionR-container">
+                        <div className="section-title">
                             <h2>Education</h2>
                         </div>
-                        <div className="education-content">
+                        <div className="section-nameYear">
                             <div>{education.institute}</div>
                             <div>{education.date_start} - {education.date_end}</div>
+                        </div>
+                        <div className="section-sub">
+                            <div>{education.location}</div>
+                        </div>
+                    </div>
+                    <div className="sectionR-container">
+                        <div className="section-title">
+                            <h2>Work Experience</h2>
+                        </div>
+                        <div className="section-nameYear">
+                            <div>{work.company}</div>
+                            <div>{work.dateWorked}</div>
+                        </div>
+                        <div className="section-sub">
+                            <div>{work.position}</div>
+                        </div>
+                        <div className="section-details">
+                            <p>{work.workDetails}</p>
+                        </div>
+                    </div>
+                    <div className="sectionR-container">
+                        <div className="section-title">
+                            <h2>Projects</h2>
+                        </div>
+                        <div className="section-nameYear">
+                            <div>{project.projectTitle}</div>
+                        </div>
+                        <div className="section-sub">
+                            <div>{project.projectTech}</div>
+                        </div>
+                        <div className="section-details">
+                            <p>{project.projectDetails}</p>
                         </div>
                     </div>
                 </div>
@@ -25,3 +57,7 @@ export default function Resume({profile, education, project, work, technical}) {
         </>
     )
 }
+
+
+
+//Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni porro amet atque, iste voluptas autem nam harum eveniet unde, minima ut optio recusandae laudantium alias nemo nobis, tempore quae perferendis!

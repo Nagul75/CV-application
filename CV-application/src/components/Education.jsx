@@ -1,6 +1,6 @@
 import "./styles/Education.css"
 
-export default function Education(educationData, handleChange) {
+export default function Education({educationData, handleChange}) {
     const {institute, location, date_start, date_end} = educationData
     const {setInstitute, setLocation, setDate_start, setDate_end} = handleChange
     return (

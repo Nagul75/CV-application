@@ -1,8 +1,8 @@
 import "./styles/Work.css"
 
-export default function (educationData, handleChange) {
-    const {company, position, dateWorked, workDetails} = educationData
-    const {setCompany, setPosition, setWorkDate, setWorkDetails} = handleChange
+export default function ({workData, handleChange}) {
+    const {company, position, dateWorked, workDetails} = workData
+    const {setCompany, setPosition, setDateWorked, setWorkDetails} = handleChange
     return (
         <div className="work-container">
             <div className="work">
@@ -13,7 +13,7 @@ export default function (educationData, handleChange) {
                   Position:<input type="text" onChange={(e) => setPosition(e.target.value)} value={position}></input>
                 </div>
                 <div className="work-input">
-                  Date:<input type="text" onChange={(e) => setWorkDate(e.target.value)} value={dateWorked}></input>
+                  Date:<input type="text" onChange={(e) => setDateWorked(e.target.value)} value={dateWorked}></input>
                 </div>
                 <div className="work-input">
                   Details: <textarea onChange={(e) => setWorkDetails(e.target.value)} value={workDetails}></textarea>
