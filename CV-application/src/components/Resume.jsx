@@ -69,5 +69,3 @@ export default function Resume({profile, education, project, work, technical}) {
 }
 
 
-
-//Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni porro amet atque, iste voluptas autem nam harum eveniet unde, minima ut optio recusandae laudantium alias nemo nobis, tempore quae perferendis!
